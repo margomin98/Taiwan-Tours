@@ -11961,8 +11961,21 @@ body {
   background-color: #a8d0e6;
 }
 
-body, button, input, select, textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+body .title a {
+  color: aliceblue;
+}
+
+body,
+button,
+input,
+select,
+textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: 'Besley', serif;
+}
+
+.twPage a {
+  font-size: 10px;
+  color: #374785;
 }
 
 .section {
@@ -12020,7 +12033,8 @@ body, button, input, select, textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .
   color: #374785;
 }
 
-.address, .phone {
+.address,
+.phone {
   padding-top: 40px;
 }
 
@@ -12030,7 +12044,7 @@ body, button, input, select, textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .
 }
 
 .nav a {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .limit {
@@ -12065,7 +12079,7 @@ body, button, input, select, textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .
 .mainTitle h1, .mainTitle .h1 {
   font-size: 50px;
   padding-top: 100px;
-  color: #f5f1e8;
+  color: #938b77;
 }
 
 .mainTitle h1 a:hover, .mainTitle .h1 a:hover {
@@ -12074,7 +12088,7 @@ body, button, input, select, textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .
 
 .notice {
   padding-bottom: 50px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .page a {

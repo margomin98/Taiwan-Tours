@@ -1,7 +1,10 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "_main.scss";
 
-
+.twPage a{
+  font-size: 10px;
+  color: #374785;
+}
 .section {
   border-bottom: 1px solid black;
   padding: 50px 0 30px 0;
@@ -60,7 +63,7 @@
 }
 
 .nav a {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 
@@ -100,7 +103,7 @@
 .mainTitle h1 {
   font-size: 50px;
   padding-top: 100px;
-  color: rgb(245, 241, 232);
+  color: rgb(147, 139, 119);
 
   a:hover {
     text-decoration: none;
@@ -109,7 +112,7 @@
 
 .notice {
   padding-bottom: 50px;
-  font-size: 15px
+  font-size: 20px
 }
 
 .page a {

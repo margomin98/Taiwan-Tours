@@ -1,0 +1,147 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "_main.scss";
+
+
+.section {
+  border-bottom: 1px solid black;
+  padding: 50px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  @media (max-width:768px) {
+    display: flex;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width:768px) {
+  .detailImg {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .part1 {
+    margin-left: auto;
+  }
+
+  .part2 {
+    padding-top: 20px;
+  }
+
+  .icon {
+    padding: 50px 0 30px 0;
+  }
+}
+
+.nav-link {
+  font-size: 25px;
+  color: #374785;
+
+
+}
+
+
+.address,
+.phone {
+  padding-top: 40px;
+}
+
+.info {
+  padding: 50px 0px 50px 0;
+  border-bottom: 2px dashed #24305E
+}
+
+.nav a {
+  padding-top: 50px;
+}
+
+
+
+.limit {
+  margin: 0 50px 0 5px;
+}
+
+.send {
+  border: none;
+  background-color: #F76C6C;
+  padding: 3px 10px 3px 10px;
+
+}
+
+.list {
+  margin: 20px 0 100px 0;
+}
+
+
+
+.text {
+  padding-left: 20px;
+}
+
+.description {
+  font-size: 15px;
+  color: #1e2f74;
+}
+
+.keyword,
+.limit {
+  padding: 0 10px 0 10px;
+  border: none;
+}
+
+.mainTitle h1 {
+  font-size: 50px;
+  padding-top: 100px;
+  color: rgb(245, 241, 232);
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.notice {
+  padding-bottom: 50px;
+  font-size: 15px
+}
+
+.page a {
+  color: #ebedf5;
+  text-decoration: none;
+  margin-top: 10px;
+
+}
+
+.name {
+  font-size: 35px;
+  color: rgb(61, 55, 40);
+}
+
+.info,
+.text {
+  display: flex;
+}
+
+.text {
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+
+  :hover {
+    color: rgb(59, 46, 125);
+  }
+}
+
+img {
+  max-width: 350px;
+  height: auto;
+}

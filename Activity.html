@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Come Visit Taiwan</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="scss/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Besley:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/be63cbe2b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="mainTitle">
+
+    <a href="./Spot.html">
+      <h1 class=" text-center" style="text-decoration:none">Taiwan Tours</h1>
+    </a>
+    <p class="notice text-muted text-center">Give it a little tour</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col d-none d-md-block">
+
+        <nav class="nav nav-pills d-flex justify-content-center">
+          <a class="nav-link" href="./Spot.html">Spot</a>
+
+          <a class="nav-link" href="./Restaurant.html">Restaurant</a>
+
+          <a class="nav-link" href="./Hotel.html">Hotel</a>
+
+          <a class="nav-link" href="./Activity.html">Activity</a>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col icon 	d-sm-block d-md-none d-flex justify-content-around">
+        <a href="./Spot.html" class="fa-solid fa-xl fa-archway" style="color:#374785" alt="Spot"></a>
+        <a href="./Hotel.html" class="fa-solid fa-xl fa-bed" style="color:#374785" alt="Hotel"></a>
+        <a href="./Restaurant.html" class="fa-solid  fa-xl fa-utensils" style="color:#374785" alt="Restaurant"></a>
+        <a href="./Activity.html" class="fa-solid fa-xl  fa-calendar-days" style="color:#374785" alt="Activity"></a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row ">
+      <div class="col section text-center d-flex flex-column d-sm-flex flex-sm-row">
+        <div class="part1 ">
+          <select type="search" class='keyword rounded-pill'>
+            <option>臺北市</option>
+            <option>新北市</option>
+            <option>宜蘭縣</option>
+            <option>基隆市</option>
+            <option>桃園市</option>
+            <option>苗栗縣</option>
+            <option>臺中市</option>
+            <option>南投縣</option>
+            <option>彰化縣</option>
+            <option>雲林縣</option>
+            <option>嘉義縣</option>
+            <option>臺南市</option>
+            <option>高雄市</option>
+            <option>屏東縣</option>
+            <option>臺東縣</option>
+            <option>花蓮縣</option>
+            <option>金門縣</option>
+            <option>澎湖縣</option>
+            <option>連江縣</option>
+          </select>
+
+          <select class="limit rounded-pill">
+            <option disabled selected>Select list number</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value='100'>Unlimited</option>
+          </select>
+        </div>
+
+        <div class="part2">
+          <button value="search" class="send rounded-pill">Search</button>
+
+        </div>
+
+
+      </div>
+
+      <div class="list ">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-12 d-flex justify-content-center footer">
+        <p>Created by Margo</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- jsSHA -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+  <script src="js/Activity.js"></script>
+
+
+</body>
+
+</html>

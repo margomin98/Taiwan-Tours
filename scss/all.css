@@ -12017,6 +12017,9 @@ textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         -ms-flex-align: center;
             align-items: center;
   }
+  .nav a {
+    padding-top: 70px;
+  }
   .part1 {
     margin-left: auto;
   }
@@ -12043,14 +12046,6 @@ textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   border-bottom: 2px dashed #24305E;
 }
 
-.nav a {
-  padding-top: 70px;
-}
-
-.limit {
-  margin: 0 50px 0 5px;
-}
-
 .send {
   border: none;
   background-color: #F76C6C;
@@ -12063,6 +12058,16 @@ textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .text {
   padding-left: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .description {
@@ -12070,8 +12075,11 @@ textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #1e2f74;
 }
 
-.keyword,
 .limit {
+  margin: 0 50px 0 5px;
+}
+
+.limit .keyword {
   padding: 0 10px 0 10px;
   border: none;
 }
@@ -12100,20 +12108,6 @@ textarea, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .name {
   font-size: 35px;
   color: #3d3728;
-}
-
-.info,
-.text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 a {

@@ -28,7 +28,9 @@
   .nav {
     display: flex;
     align-items: center;
-
+    a {
+      padding-top: 70px;
+    }
   }
 
   .part1 {
@@ -62,15 +64,8 @@
   border-bottom: 2px dashed #24305E
 }
 
-.nav a {
-  padding-top: 70px;
-}
 
 
-
-.limit {
-  margin: 0 50px 0 5px;
-}
 
 .send {
   border: none;
@@ -87,6 +82,10 @@
 
 .text {
   padding-left: 20px;
+  flex-direction: column;
+  .info{
+    display: flex;
+}
 }
 
 .description {
@@ -94,12 +93,14 @@
   color: #1e2f74;
 }
 
-.keyword,
+
 .limit {
+  margin: 0 50px 0 5px;
+  .keyword{
   padding: 0 10px 0 10px;
   border: none;
 }
-
+}
 .mainTitle h1 {
   font-size: 50px;
   padding-top: 100px;
@@ -127,18 +128,9 @@
   color: rgb(61, 55, 40);
 }
 
-.info,
-.text {
-  display: flex;
-}
-
-.text {
-  flex-direction: column;
-}
 
 a {
   text-decoration: none;
-
   :hover {
     color: rgb(59, 46, 125);
   }

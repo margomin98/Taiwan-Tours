@@ -95,7 +95,7 @@
 
 
 .limit {
-  margin: 0 50px 0 5px;
+  margin: 0 5px 0 5px;
   .keyword{
   padding: 0 10px 0 10px;
   border: none;
@@ -139,4 +139,13 @@ a {
 img {
   max-width: 350px;
   height: auto;
+}
+
+.keyword{
+  width: 100px;
+  padding-left: 5px;
+}
+
+.limit{
+  padding-left: 5px;
 }

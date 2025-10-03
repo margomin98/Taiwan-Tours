@@ -1,10 +1,18 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "_main.scss";
 
-.twPage a{
+@font-face {
+  font-family: 'Melon';
+  src: url('../fonts/Melon Fruit.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.twPage a {
   font-size: 10px;
   color: #374785;
 }
+
 .section {
   border-bottom: 1px solid black;
   padding: 50px 0 30px 0;
@@ -18,41 +26,37 @@
   }
 }
 
-@media (max-width:768px) {
-  .detailImg {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-  }
 
-  .nav {
-    display: flex;
-    align-items: center;
-    a {
-      padding-top: 70px;
-    }
-  }
-
-  .part1 {
-    margin-left: auto;
-  }
-
-  .part2 {
-    padding-top: 20px;
-  }
-
-  .icon {
-    padding: 50px 0 30px 0;
-  }
-}
 
 .nav-link {
   font-size: 25px;
   color: #374785;
-
-
 }
 
+.loading {
+  font-size: 20px;
+  color: #6D94C5;
+  font-weight: 600;
+}
+
+.section {
+  padding: 0;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #252b30;
+  background-color: #CBDCEB;
+  border-color: transparent;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link {
+  font-size: 18px;
+}
 
 .address,
 .phone {
@@ -69,8 +73,15 @@
 
 .send {
   border: none;
-  background-color: #F76C6C;
-  padding: 3px 10px 3px 10px;
+  background-color: #80A1BA;
+  padding: 4px 0;
+  font-weight: 600;
+  margin-top: 8px;
+
+  &:hover {
+    background-color: #84abc9;
+  }
+
 
 }
 
@@ -83,31 +94,28 @@
 .text {
   padding-left: 20px;
   flex-direction: column;
-  .info{
+
+  .info {
     display: flex;
-}
+  }
 }
 
 .description {
   font-size: 15px;
-  color: #1e2f74;
+  color: #222224;
 }
 
 
-.limit {
-  margin: 0 5px 0 5px;
-  .keyword{
-  padding: 0 10px 0 10px;
-  border: none;
-}
-}
-.mainTitle h1 {
-  font-size: 50px;
-  padding-top: 100px;
-  color: rgb(147, 139, 119);
+.mainTitle {
 
-  a:hover {
-    text-decoration: none;
+  h1 {
+    font-size: 4rem;
+    color: rgb(147, 139, 119);
+    font-family: 'Melon';
+
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -131,6 +139,7 @@
 
 a {
   text-decoration: none;
+
   :hover {
     color: rgb(59, 46, 125);
   }
@@ -141,11 +150,81 @@ img {
   height: auto;
 }
 
-.keyword{
-  width: 100px;
-  padding-left: 5px;
+
+@media (min-width: 1200px) {
+  .nav-tabs {
+    justify-content: end;
+  }
+   .mainTitle{
+  padding-top: 5% ;
+} 
 }
 
-.limit{
-  padding-left: 5px;
+@media (max-width: 1199.98px) {
+  .nav-tabs {
+    justify-content: end;
+  }
+   .mainTitle{
+  padding-top: 8% ;
+} 
+}
+@media (max-width:768px) {
+  .nav-tabs {
+    justify-content: unset !important;
+  }
+
+  .scrollable-nav {
+    /* 啟用水平滾動條 */
+    overflow-x: auto;
+    /* 隱藏垂直滾動條 (如果有的話) */
+    overflow-y: hidden;
+    /* 確保在 Webkit 瀏覽器 (Chrome, Safari) 上隱藏滾動條，但保留滾動功能 */
+    -webkit-overflow-scrolling: touch;
+    /* 提升手機上滾動體驗 */
+  }
+
+  /* 針對 Webkit 瀏覽器隱藏滾動條 */
+  .scrollable-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav {
+    flex-wrap: unset !important;
+  }
+
+  .detailImg {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    a {
+      padding-top: 70px;
+    }
+  }
+
+  .part1 {
+    margin-left: auto;
+  }
+
+  .part2 {
+    padding-top: 8px;
+  }
+
+  .icon {
+    padding: 50px 0 30px 0;
+  }
+  .mainTitle{
+  padding-top: 15% ;
+} 
+.notice{
+padding-bottom: 30px !important
+}
+body{
+padding: 5%;
+}
 }

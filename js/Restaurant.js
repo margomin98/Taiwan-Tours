@@ -49,6 +49,12 @@ send.addEventListener('click', function () {
     const thisData = response.data;
     let str = "";
 
+      // 檢查是否無資料
+    if (thisData.length === 0) {
+      list.innerHTML = `<p class="no-data">目前查無資料。</p>`; // 無數據文字
+      return;
+    }
+
     thisData.forEach(item => {
       // 設定圖片 URL，如果缺少則使用預設圖片
       const imageUrl = item.Picture?.PictureUrl1 || './image/noimage.png';
@@ -78,17 +84,23 @@ send.addEventListener('click', function () {
 
     list.innerHTML = str;
   })
-  .catch(function (error) {
+   .catch(function (error) {
     console.error(error);
-    list.innerHTML = `<p class="error">Failed to fetch data. Please try again later.</p>`;
+    
+    // 檢查錯誤回應是否為 429 狀態碼
+    if (error.response && error.response.status === 429) {
+      list.innerHTML = `<p class="error">**目前查詢人數過多，請稍後再試。**</p>`; // 429 錯誤訊息
+    } else {
+      // 其他錯誤（例如網路問題、API 錯誤等），顯示一般中文錯誤訊息
+      list.innerHTML = `<p class="error">**載入資料失敗。請稍後再試。**</p>`;
+    }
   });
-});
-
+})
 
 // 驗證與授權 Header
 function getAuthorizationHeader() {
-  let AppID = '3899ebde142c48fcb453057b582cf452';
-  let AppKey = 'n1BrwKNLtEeJEa2UzxakmCbyE4M';
+  let AppID = 'minmm98-1a34959e-8761-41ba';
+  let AppKey = '6e839c61-e3e1-42ea-a832-7185cdad1ab0';
 
   let GMTString = new Date().toGMTString();
   let ShaObj = new jsSHA('SHA-1', 'TEXT');
